@@ -41,20 +41,50 @@
   height: 80px;
   align-items: center;
   border-bottom: 1px solid #E5E5E5;
-}
-
-.mob-navigation__trigger {
-  padding: 12px;
-  outline: none;
-  cursor: pointer;
+  padding: 2rem;
 }
 
 .mob-navigation__menu {
   width: 100vw;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation {
     display: flex;
   }
+}
+
+.mob-navigation__menu {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: height 300ms;
+}
+
+.mob-navigation__menu.show {
+  height: 109px;
+}
+
+.mob-navigation__menu-item {
+  color: #050505;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: right;
+  border-bottom: solid 1px #fff;
+}
+
+.mob-logo {
+  height: 30px;
+}
+
+.mob-navigation__menu-item:hover {
+  background-color: #ddd;
+  color: black;
 }

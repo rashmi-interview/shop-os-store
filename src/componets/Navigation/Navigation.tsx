@@ -2,9 +2,9 @@ import { Box } from "@chakra-ui/react"
 import {
   NavLink
 } from "react-router-dom"
-import Home from "../assets/home.svg?react"
-import Store from "../assets/store.svg?react"
-import Workflow from "../assets/workflow.svg?react"
+import Home from "../../assets/home.svg?react"
+import Store from "../../assets/store.svg?react"
+import Workflow from "../../assets/workflow.svg?react"
 import "./Navigation.css"
 
 function Navigation() {

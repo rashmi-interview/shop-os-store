@@ -32,7 +32,7 @@ export function filterAgents(filter: AgentFilterType): Promise<AgentType[]> {
 function applyFilterUtil(filter: AgentFilterType, data: AgentType[]): AgentType[] {
   if (filter.label === "All") return data;
 
-  let results = data.filter((agent) => {
+  const results = data.filter((agent) => {
     const tag = agent.tags.find((tag) => tag.label === filter.label);
     if (tag) return agent;
   })

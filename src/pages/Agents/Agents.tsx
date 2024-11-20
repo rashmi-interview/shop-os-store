@@ -11,10 +11,12 @@ import { useEffect, useState } from "react"
 import { IconType } from "../../componets/AgentCard/AgentCard.types"
 import { getAgents, getAgentFilters, filterAgents } from "./agents.service"
 import { PageContent } from "../PageContent/PageContent"
-import Navigation from "../../navigation/Navigation"
+import Navigation from "../../componets/Navigation/Navigation"
 import { Filter, FilterChip } from "../../componets/Filters/Filter"
 import Loader from "../../assets/loader.svg?react"
 import PageTitle from "../PageTitle/PageTitle"
+import { isMob } from "../../constants"
+import { MobNavigation } from "../../componets/Navigation/MobNavigation"
 import "./Agents.css"
 
 export interface AgentType {
@@ -58,7 +60,8 @@ function Agents() {
 
   return (
     <>
-      <Navigation />
+      {isMob ? <MobNavigation /> : <Navigation />}
+
       <PageContent>
         <PageTitle>Agents</PageTitle>
 

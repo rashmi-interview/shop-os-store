@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom"
 import { PageContent } from "../PageContent/PageContent"
 import { Heading } from "../../componets/Heading/Heading"
 import { Button } from "../../componets/Button/Button"
-import Navigation from "../../navigation/Navigation"
+import Navigation from "../../componets/Navigation/Navigation"
 import AddOutline from "../../assets/add-outline.svg?react"
 import Upload from "../../assets/upload.svg?react"
 import Agent from "../../assets/robot.svg?react"
 import Template from "../../assets/template.svg?react"
+import { isMob } from "../../constants"
+import { MobNavigation } from "../../componets/Navigation/MobNavigation"
 import "./Home.css"
 
 function Home() {
@@ -15,7 +17,7 @@ function Home() {
 
   return (
     <>
-      <Navigation />
+      {isMob ? <MobNavigation /> : <Navigation />}
       <PageContent>
         <Center height="100vh" flexDirection="column">
           <Heading level="h1">How can I assist you today?</Heading>
