@@ -9,8 +9,7 @@ function Workflows() {
     <Flex>
       <Navigation />
       <PageContent>
-        <PageTitle>My Stores</PageTitle>
-
+        <PageTitle>Workflows</PageTitle>
       </PageContent>
     </Flex>
   )

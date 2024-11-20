@@ -15,14 +15,14 @@
 .agent-card__title {
   margin-top: 0.875rem;
   margin-bottom: 4px;
-  font-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
+  font-size: clamp(0.8rem, 0.5rem + 0.8vw, 0.875rem);
   font-weight: var(--fw-5);
   color: #050505;
   line-height: 1.125;
 }
 
 .agent-card__desc {
-  font-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
+  font-size: clamp(0.8rem, 0.5rem + 0.8vw, 0.875rem);
   font-weight: var(--fw-3);
   color: #C7C6C4;
   line-height: 1.125;
@@ -103,13 +103,13 @@
 }
 
 .agent-card__hover4-title {
-  font-size: var(--fs-3);
+  font-size: 1rem;
   font-weight: var(--fw-6);
-  margin-bottom: 8px;
+  margin-bottom: 0.4rem;
 }
 
 .agent-card__hover4-description {
-  font-size: var(--fs-2);
+  font-size: clamp(0.8rem, 0.5rem + 0.8vw, 0.875rem);
   font-weight: var(--fw-4);
   line-height: 1rem;
   margin-bottom: 8px;
