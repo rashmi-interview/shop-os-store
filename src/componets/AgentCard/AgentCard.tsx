@@ -84,10 +84,18 @@ export function AgentCardHover() {
     'background-changer': AgentCardHoverType2,
     'video-generator': AgentCardHoverType3,
     'description-generator': AgentCardHoverType4,
+    'video-editor': undefined,
+    'ai-shadows': undefined,
+    'ai-model': undefined,
+    'image-editor': undefined,
+    'face-change': undefined,
+    'smart-crop': undefined,
+    'batch-edit': undefined,
+    'avatars': undefined
   }
 
   const AgentCardContext = useAgentCardContext()
-  const AgentHoverCard = AgentCardTypeMapping[AgentCardContext.agent_type];
+  const AgentHoverCard = AgentCardTypeMapping[AgentCardContext.agent_type]
 
   return AgentHoverCard ? <AgentHoverCard /> : null
 }

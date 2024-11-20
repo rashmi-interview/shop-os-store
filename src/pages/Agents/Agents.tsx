@@ -15,7 +15,6 @@ import Navigation from "../../navigation/Navigation"
 import { Filter, FilterChip } from "../../componets/Filters/Filter"
 import Loader from "../../assets/loader.svg?react"
 import PageTitle from "../PageTitle/PageTitle"
-import { MobNavigation } from "../../navigation/MobNavigation"
 import "./Agents.css"
 
 export interface AgentType {
@@ -60,7 +59,6 @@ function Agents() {
   return (
     <>
       <Navigation />
-      {/* <MobNavigation /> */}
       <PageContent>
         <PageTitle>Agents</PageTitle>
 
