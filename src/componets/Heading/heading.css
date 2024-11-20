@@ -1,0 +1,13 @@
+.l-heading {
+  padding: 1.625rem 2rem;
+}
+
+.heading-h1 {
+  font-size: clamp(1.5rem, 1rem + 1vw, 2.5rem);
+  line-height: 2.421rem;
+}
+
+.heading-h2 {
+  font-size: clamp(1rem, 0.8rem + 1vw, 2.2rem);
+  line-height: 2.421rem;
+}

@@ -1,0 +1,18 @@
+.input__wrapper {
+  width: 60%;
+  min-width: 280px;
+  position: relative;
+}
+
+.input {
+  padding: 1rem;
+  padding-left: 3rem;
+  border-radius: 20px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+}

@@ -1,0 +1,33 @@
+:root {
+  --fs-1: 12px;
+  --fs-2: 14px;
+  --fs-3: 16px;
+  --fs-4: 18px;
+  --fs-5: 20px;
+  --fs-6: 24px;
+  --fs-7: 28px;
+
+  --fs-8: 32px;
+
+
+  --fw-3: 300;
+  --fw-4: 400;
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+
+}
+
+html {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  html {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+}
