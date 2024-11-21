@@ -19,7 +19,7 @@ function Home() {
     <>
       {isMob ? <MobNavigation /> : <Navigation />}
       <PageContent>
-        <Center height="100vh" flexDirection="column">
+        <Center height="100%" flexDirection="column">
           <Heading level="h1">How can I assist you today?</Heading>
           <Box className="input__wrapper">
             <AddOutline className="input__icon" />
